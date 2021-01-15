@@ -1,7 +1,7 @@
 {
     "name": "S3 Snapshot Sync",
     "version": "1.0",
-    "slug": "s3-snapshot-sync",
+    "slug": "s3_snapshot_sync",
     "description": "Backup snapshots to S3 bucket",
     "arch": [
         "armhf",
