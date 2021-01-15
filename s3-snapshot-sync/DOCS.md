@@ -102,7 +102,7 @@ condition: []
 action:
   - service: hassio.addon_start
     data:
-      addon: 0f31b3a8_s3-snapshot-sync
+      addon: 0f31b3a8_s3_snapshot_sync
 mode: single
 ```
 
