@@ -102,7 +102,7 @@ condition: []
 action:
   - service: hassio.addon_start
     data:
-      addon: local_backup_s3
+      addon: 0f31b3a8_s3-snapshot-sync
 mode: single
 ```
 
