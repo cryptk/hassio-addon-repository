@@ -4,10 +4,15 @@ KEY=$(bashio::config 'aws_access_key_id')
 SECRET=$(bashio::config 'aws_secret_access_key')
 BUCKET=$(bashio::config 's3_bucket_name')
 
+if bashio::config.has_value 's3_endpoint_url'; then
+	bashio::log "s3_endpoint_url is set, using custom S3 endpoint"
+	$S3ENDPOINTURL="--endpoint-url "$(bashio::config 's3_endpoint_url')
+fi
+
 aws configure set aws_access_key_id $KEY
 aws configure set aws_secret_access_key $SECRET
 
-aws s3 sync /backup/ s3://$BUCKET/
+aws s3 sync $ENDPOINTURL /backup/ s3://$BUCKET/
 
 if bashio::config.has_value 'purge_days'; then
 	bashio::log "purge_days is set, cleaning up old backups"

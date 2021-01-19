@@ -1,6 +1,6 @@
 {
     "name": "S3 Snapshot Sync",
-    "version": "1.0",
+    "version": "1.1.0",
     "slug": "s3_snapshot_sync",
     "description": "Backup snapshots to S3 bucket",
     "arch": [
@@ -21,6 +21,7 @@
         "aws_access_key_id": "str",
         "aws_secret_access_key": "str",
         "s3_bucket_name": "str",
+        "s3_endpoint_url": "str?",
         "purge_days": "int?"
     },
     "map": [

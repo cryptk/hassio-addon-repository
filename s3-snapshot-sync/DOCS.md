@@ -39,6 +39,11 @@ The `aws_secret_access_key` option specifies the AWS IAM Secret Access Key assoc
 The `s3_bucket_name` option specifies the name of the S3 bucket you would like to store your snapshots in.
 The AWS IAM user you created must have a policy that allows a minimum of s3:PutObject and s3:ListBucket for the S3 bucket you created
 
+### Option `s3_endpoint_url`
+
+The `s3_endpoint_url` option allows overriding the s3 endpoint url that is provided to awscli.
+This is useful if you are syncing to a non-AWS S3 (such as minio).
+
 ### Option `purge_days`
 
 This option is OPTIONAL.  If you would like the addon to automatically delete old snapshots from Home Assistant OS, you can specify purge_days
