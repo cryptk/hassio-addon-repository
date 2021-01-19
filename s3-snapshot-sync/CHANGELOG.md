@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.3
+- Fix for "Unknown options error" related to custom s3 endpoints
+
 ## v1.1.2
 - Initial release of pre-built addon container image
 
