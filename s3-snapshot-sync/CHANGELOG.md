@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.2
+- Initial release of pre-built addon container image
+
 ## 1.1.1
 - Bugfix for new s3 endpoint URL specification
 

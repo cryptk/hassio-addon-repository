@@ -1,8 +1,10 @@
 {
     "name": "S3 Snapshot Sync",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "slug": "s3_snapshot_sync",
     "description": "Backup snapshots to S3 bucket",
+    "url": "https://github.com/cryptk/hassio-addon-s3-snapshot-sync",
+    "image": "ghcr.io/cryptk/s3_snapshot_sync/{arch}",
     "arch": [
         "armhf",
         "armv7",
