@@ -1,0 +1,10 @@
+# Changelog
+
+## 1.1.1
+- Bugfix for new s3 endpoint URL specification
+
+## 1.1.0
+- Add ability to specify a custom S3 endpoint URL, useful for self-hosted S3 (I.E. minio)
+
+## 1.0.0
+- Initial version, able to sync snapshots to AWS S3
