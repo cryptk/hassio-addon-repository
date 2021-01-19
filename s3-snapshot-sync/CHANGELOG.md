@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.1.4
-- Rollback to hassio-addons/base 8.6.0 to fix addon update detection warning
+- Rollback to hassio-addons/base 8.0.6 to fix addon update detection warning
 
 ## 1.1.3
 - Fix for "Unknown options error" related to custom s3 endpoints
