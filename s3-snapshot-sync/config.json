@@ -1,32 +1,24 @@
 {
-    "name": "S3 Snapshot Sync",
-    "version": "1.1.4",
-    "slug": "s3_snapshot_sync",
-    "description": "Backup snapshots to S3 bucket",
-    "url": "https://github.com/cryptk/hassio-addon-s3-snapshot-sync",
-    "image": "ghcr.io/cryptk/s3_snapshot_sync/{arch}",
-    "arch": [
-        "armhf",
-        "armv7",
-        "aarch64",
-        "amd64",
-        "i386"
-    ],
-    "startup": "once",
-    "boot": "manual",
-    "options": {
-        "aws_access_key_id": null,
-        "aws_secret_access_key": null,
-        "s3_bucket_name": null
-    },
-    "schema": {
-        "aws_access_key_id": "str",
-        "aws_secret_access_key": "str",
-        "s3_bucket_name": "str",
-        "s3_endpoint_url": "str?",
-        "purge_days": "int?"
-    },
-    "map": [
-        "backup:rw"
-    ]
+  "name": "S3 Snapshot Sync",
+  "version": "1.1.5",
+  "slug": "s3_snapshot_sync",
+  "description": "Backup snapshots to S3 bucket",
+  "url": "https://github.com/cryptk/hassio-addon-s3-snapshot-sync",
+  "image": "ghcr.io/cryptk/s3_snapshot_sync/{arch}",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "once",
+  "boot": "manual",
+  "options": {
+    "aws_access_key_id": null,
+    "aws_secret_access_key": null,
+    "s3_bucket_name": null
+  },
+  "schema": {
+    "aws_access_key_id": "str",
+    "aws_secret_access_key": "str",
+    "s3_bucket_name": "str",
+    "s3_endpoint_url": "str?",
+    "purge_days": "int?"
+  },
+  "map": ["backup:rw"]
 }
